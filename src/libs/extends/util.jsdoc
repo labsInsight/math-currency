@@ -1,0 +1,39 @@
+'use strict'
+
+const Util = {
+    /**
+     * 位校验
+     * @param {int} fixedValue 固定的源值
+     * @param {int} inValue 传入的值
+     * @return {Boolean} 结果
+     * @example
+     * Util.bitCheck(7, 2) => true
+     * Util.bitCheck(7, 8) => false
+     */
+    bitCheck: function(fixedValue, inValue){},
+    /**
+     * 格式化模板数据
+     * @param {String} tpl 模板数据
+     * @param {Object} metaData 元数据
+     * @param {String} preifx 模板数据前缀标识，默认为$
+     * @return {String} str 格式化后的字符串
+     */
+    formatData: function(tplData, metaData, prefix){},
+    /**
+     * 格式化代码
+     * @param {String} code 需要格式化的代码
+     * @param {String} formatter 格式，如：4, 4-4-2, 3-3-8-4, 3-4-4
+     *                         如果代码超过格式设置的值，那么后面的格式形式以最后一个格式方式为准
+     *                         默认值为：4
+     * @param {String} chr 格式间隔字符，默认为值为：英文空格字符
+     * @return {String} code
+     */
+    formatCode: function(code, formatter, chr){},
+    /**
+     * 重置格式化代码
+     * @param {String} code 已格式化的代码
+     * @param {String} chr 格式间隔字符，默认为值为：英文空格字符
+     * @return {String} code
+     */
+    revertCode: function(code, chr){},
+}

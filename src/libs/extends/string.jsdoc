@@ -1,0 +1,103 @@
+'use strict'
+
+const StringUtil = {
+    /**
+     * 替换所有匹配的字符/字符串
+     * @param  {String} instr       输入的字符串
+     * @param  {String} regexp      正则表达式
+     * @param  {String} replacement 用于替换的字符串
+     * @return {String}             替换后的字符串
+     */
+    replaceAll: function(instr, regexp, replacement){},
+    /**
+     * 替换第一次匹配的字符/字符串
+     * @param  {String} instr       输入的字符串
+     * @param  {String} regexp      正则表达式
+     * @param  {String} replacement 用于替换的字符串
+     * @return {String}             替换后的字符串
+     */
+    replaceFirst: function(instr, regexp, replacement){},
+    /**
+     * 开头匹配
+     * @param  {String} instr  输入的字符串
+     * @param  {String} prefix 前缀
+     * @param  {Number} offset 起始的偏移位置
+     * @return {Boolean}       匹配结果
+     */
+    startsWith: function(instr, prefix, offset){},
+    /**
+     * 结尾匹配
+     * @param  {String} instr  输入的字符串
+     * @param  {String} suffix 后缀
+     * @return {Boolean}       匹配结果
+     */
+    endsWith: function(instr, suffix){},
+    /**
+     * 两端去空
+     * @param  {String} instr 输入的字符串
+     * @return {String}       去空后的字符串
+     */
+    trim: function(instr){},
+    /**
+     * 左去空
+     * @param  {String} instr 输入的字符串
+     * @return {String}       去空后的字符串
+     */
+    trimLeft: function(instr){},
+    /**
+     * 右去空
+     * @param  {String} instr 输入的字符串
+     * @return {String}       去空后的字符串
+     */
+    trimRight: function(instr){},
+    /**
+     * 字符串长度，将中文看成两个字符计算
+     * @param  {String} instr 输入的字符串
+     * @return {Number}       字符串长度
+     */
+    length: function(instr){},
+    /**
+     * 前导填充
+     * @param {String} instr 输入的字符串
+     * @param {String} chr 填充的字符
+     * @param {Number} bit 位数
+     * @return {String} 填充后的字符串
+     */
+    fillBefore: function(instr, chr, bit){},
+    /**
+     * 向后填充
+     * @param {String} instr 输入的字符串
+     * @param {String} chr 填充的字符
+     * @param {Number} bit 位数
+     * @return {String} 填充后的字符串
+     */
+    fillAfter: function(instr, chr, bit){},
+    /**
+     * 千分位格式化
+     * @param {String} currency 货币金额
+     * @param {Boolean} trimTailZero 是否过滤小数位后的未尾0
+     * @return {String} 转换后的货币
+     */
+    formatMaskCurrency: function(currency, trimTailZero){},
+    /**
+     * 转换成货币格式(支持超大金额)
+     * @param {String} amount 输入的字符串
+     * @param {int} digit 小数位数
+     * @param {Boolean} round  小数处理，true: 4舍5入 false: 丢弃
+     * @param {Boolean} trimTailZero 是否过滤小数位后的未尾0
+     * @return {String} 转换后的货币
+     */
+    toCurrency: function(amount, digit, round, trimTailZero){},
+    /**
+     * 将字符串转换成十六进制
+     * @param {String} str 原串
+     * @return {String} hex
+     */
+    string2hex: function(str){},
+    /**
+     * 将十六进制转换成字符串
+     * @param {String} hex 十六进制串
+     * @return {String} str
+     */
+    hex2string: function(hex){},
+};

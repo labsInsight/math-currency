@@ -1,0 +1,18 @@
+'use strict'
+
+const MathUtil = {
+    /**
+     * 相乘
+     * @param  {Number} num1 数值1
+     * @param  {Number} num2 数值2
+     * @return {Number}      相乘后的值
+     */
+    mul: function(num1, num2){},
+    /**
+     * 相除
+     * @param  {Number} num1 数值1
+     * @param  {Number} num2 数值2
+     * @return {Number}      相除后的值
+     */
+    div: function(num1, num2){},
+};
